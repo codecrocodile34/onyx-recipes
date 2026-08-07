@@ -26,6 +26,7 @@ build = "autotools"
 | `sha256` | yes | Digest of that tarball, as `sha256sum` prints it |
 | `build` | yes | One of `autotools`, `make`, `cmake` |
 | `depends` | no | Packages needed first, such as `["ncurses (>= 6.4)"]` |
+| `configure_args` | no | Extra arguments for the configure step, such as `["--with-shared"]` |
 
 ## Adding a recipe
 
