@@ -1,9 +1,9 @@
-# lnf-recipes
+# onyx-recipes
 
-Recipe tree for [lnfpkg](https://github.com/codecrocodile34/lnfpkg), the package
-manager used by the lnf Linux distribution.
+Recipe tree for [darkpkg](https://github.com/codecrocodile34/darkpkg), the package
+manager used by the onyx Linux distribution.
 
-Each recipe is one TOML file named after its package, so `lnfpkg install ncurses`
+Each recipe is one TOML file named after its package, so `darkpkg install ncurses`
 reads `ncurses.toml`. A recipe points at an upstream release tarball and pins its
 sha256, and the target machine downloads, verifies, compiles and installs it.
 Nothing is hosted here but the metadata.
