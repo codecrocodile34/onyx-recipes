@@ -11,6 +11,7 @@ here but the metadata.
 ```toml
 name = "ncurses"
 version = "6.4"
+description = "Terminal handling library for text user interfaces"
 source = { type = "tarball", url = "https://ftp.gnu.org/gnu/ncurses/ncurses-6.4.tar.gz", sha256 = "6931283d9ac87c5073f30b6290c4c75f21632bb4fc3603ac8100812bed248159" }
 build = "autotools"
 configure_args = ["--with-shared"]
@@ -22,6 +23,7 @@ configure_args = ["--with-shared"]
 | --- | --- | --- |
 | `name` | yes | Package name, and the filename without `.toml` |
 | `version` | yes | Upstream version, compared when resolving constraints |
+| `description` | no | One line saying what the package is, shown by `darkpkg info` |
 | `source` | yes | Where the source comes from, see below |
 | `build` | yes | One of `autotools`, `make`, `cmake` |
 | `depends` | no | Packages needed first, such as `["ncurses (>= 6.4)"]` |
